@@ -47,28 +47,32 @@ public class ArchivoSalida {
 				//muestra en salida.out
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.newLine();
-				SalidaFinal.write("| Máximo   | " +  max + " |");
+				SalidaFinal.write("| Máximo   | " + String.format("%5d |", max) );
 				SalidaFinal.newLine();
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.newLine();
-				SalidaFinal.write("| Mínimo   | " +  min + "     |");
+				SalidaFinal.write("| Mínimo   | " + String.format("%5d |", min));
 				SalidaFinal.newLine();
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.newLine();
 				SalidaFinal.write("| Promedio | " +  String.format("%5.0f |", prom));
 				SalidaFinal.newLine();
 				SalidaFinal.write("+----------+-------+");
+				
 				SalidaFinal.close();
 				
-				System.out.println(" Se genero el archivo salida !!!");
+				
 				
 				///para mostrar por consola
+				
+				System.out.println("Se genero el archivo salida y se muestra");
+			
 				System.out.println("+----------+-------+");
-				System.out.println("| Máximo   | " +  max + " |");
+				System.out.println("| Máximo   | " + String.format("%5d |", max));
 				System.out.println("+----------+-------+");   
-				System.out.println("| Mínimo   | " +  min + "     |");
+				System.out.println("| Mínimo   | " + String.format("%5d |", min) );
 				System.out.println("+----------+-------+");
-				System.out.println("| Promedio | " +  String.format("%5.0f |", prom));///Solucionar lo de formato
+				System.out.println("| Promedio | " + String.format("%5.0f |", prom));///Solucionar lo de formato
 				System.out.println("+----------+-------+");
 				
 				
@@ -82,7 +86,7 @@ public class ArchivoSalida {
 		} catch (FileNotFoundException e) {
 			System.out.println("No se abrio el archivo");
 			e.printStackTrace();
-		}///TRYCATCH DE RAMDOM.IN
+		}///TRYCATCH DE RAMDOM.TXT
 	
 	
 	

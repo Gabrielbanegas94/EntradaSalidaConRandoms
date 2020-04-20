@@ -16,10 +16,10 @@ public class ArchivoRandom {
 			BufferedWriter BufferEntrada = new BufferedWriter(ArchivoEntrada);
 			int rango = (20000 - 10000) + 1;
 			int cantMax = (int) (Math.random() * rango) + 10000;/// Va a establecer una cantidad aleatoria entre 10000 y
-																/// 20000
+																/// 20000 
 
 			for (int i = 0; i < cantMax; i++) {
-				int numeroRandom = (int) (Math.random() * 12000);/// Genera el numero que va al archivo Random.in entre
+				int numeroRandom = (int) (Math.random() * 12000);/// Genera el numero que va al archivo Random.txt entre
 																	/// 0 y 12000
 				BufferEntrada.write(String.format("%d\n", numeroRandom));
 			}
