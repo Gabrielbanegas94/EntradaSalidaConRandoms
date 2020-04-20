@@ -37,7 +37,7 @@ public class ArchivoSalida {
 			 
 			 lectura.close();
 			
-			 int prom= (int) sum/cantNum;//calculamos el promedio
+			 double prom=  sum/cantNum;//calculamos el promedio
 			 
 			 ///Generamos el archivo salida
 			 FileWriter ArchivoSalida;
@@ -47,15 +47,15 @@ public class ArchivoSalida {
 				//muestra en salida.out
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.newLine();
-				SalidaFinal.write("| Máximo   | " +  max);
+				SalidaFinal.write("| Máximo   | " +  max + " |");
 				SalidaFinal.newLine();
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.newLine();
-				SalidaFinal.write("| Mínimo   | " +  min);
+				SalidaFinal.write("| Mínimo   | " +  min + "     |");
 				SalidaFinal.newLine();
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.newLine();
-				SalidaFinal.write("| Promedio | " +  prom);
+				SalidaFinal.write("| Promedio | " +  String.format("%5.0f |", prom));
 				SalidaFinal.newLine();
 				SalidaFinal.write("+----------+-------+");
 				SalidaFinal.close();
@@ -64,11 +64,11 @@ public class ArchivoSalida {
 				
 				///para mostrar por consola
 				System.out.println("+----------+-------+");
-				System.out.println("| Máximo   | " +  max);
+				System.out.println("| Máximo   | " +  max + " |");
+				System.out.println("+----------+-------+");   
+				System.out.println("| Mínimo   | " +  min + "     |");
 				System.out.println("+----------+-------+");
-				System.out.println("| Mínimo   | " +  min);
-				System.out.println("+----------+-------+");
-				System.out.println("| Promedio | " +  prom);
+				System.out.println("| Promedio | " +  String.format("%5.0f |", prom));///Solucionar lo de formato
 				System.out.println("+----------+-------+");
 				
 				

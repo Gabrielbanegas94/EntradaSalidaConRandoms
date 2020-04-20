@@ -32,5 +32,5 @@ public class ArchivoRandom {
 			e.printStackTrace();
 		}
 
-	}
-}
+	}//Fin Main
+}//Fin Clase
